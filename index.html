@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- تگ‌های سئو پایه‌ای -->
+    <meta name="description" content="وبلاگ شخصی من - مقالات مهندسی، برنامه‌نویسی و توسعه وب">
+    <meta name="keywords" content="وبلاگ, برنامه‌نویسی, جاوا اسکریپت, مهندسی">
+    <title>وبلاگ حرفه‌ای من</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- آیکون‌ها -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">My<span>Blog</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">خانه</a></li>
+                <li><a href="#posts-section">مقالات</a></li>
+                <li><a href="#contact-section">تماس</a></li>
+            </ul>
+        </nav>
+        <div class="actions">
+            <button id="theme-toggle" title="تغییر تم"><i class="fas fa-moon"></i></button>
+        </div>
+    </header>
+
+    <!-- بخش بنر اصلی (Hero Section) -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>به دنیای کد و مهندسی خوش آمدید</h1>
+            <p>جدیدترین مقالات، آموزش‌ها و تجربیات من در زمینه توسعه وب و پردازش سیگنال</p>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="جستجو در مقالات...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <main class="container" id="posts-section">
+        <div class="main-content">
+            <div class="section-title">
+                <h2>آخرین مقالات</h2>
+                <div class="line"></div>
+            </div>
+            <!-- گرید مقالات -->
+            <section id="blog-posts" class="posts-grid"></section>
+        </div>
+        
+        <aside class="sidebar">
+            <div class="widget">
+                <h3>دسته‌بندی‌ها</h3>
+                <ul class="categories">
+                    <li><a href="#">توسعه وب (HTML/CSS/JS)</a></li>
+                    <li><a href="#">مدارهای منطقی</a></li>
+                    <li><a href="#">پردازش سیگنال</a></li>
+                </ul>
+            </div>
+            
+            <div class="widget" id="contact-section">
+                <h3>ارتباط با من</h3>
+                <!-- فرم تماس متصل به Formspree -->
+                <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="contact-form">
+                    <input type="email" name="email" placeholder="ایمیل شما" required>
+                    <textarea name="message" rows="3" placeholder="پیام شما..." required></textarea>
+                    <button type="submit">ارسال پیام</button>
+                </form>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>تمامی حقوق محفوظ است &copy; 1405 | طراحی شده با ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
